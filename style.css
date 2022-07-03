@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	min-height: 600px;
+	max-width: 1100px;
+	border: 1px solid lightgrey;
+	padding: 10px;
+	margin: 0 auto;
+	background: lightyellow;
+	display: block;
+}
+.btn-primary{
+	display: inline-block;
+	padding: 7px 10px;
+	margin: 10px 5px;
+	background: lightgreen;
+	color: green;
+	border: 2px solid green;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color .3s ease-in-out, border .3s ease-in-out;
+}
+.btn-primary:hover{
+	background: green;
+	color: lightgreen;
+	border: 2px dashed lightgreen;
+}
+.fixed-bottom-right{
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+}
+.row1{
+	max-width: 50%;
+	display: inline-block;
+	/* border: 1px solid lightgrey; */
+	float: left;
+}
+.row2{
+	max-width: 50%;
+	display: inline-block;
+	padding: 10px;
+	/* border: 1px dotted lightgreen; */
+}
+.btn-secondary{
+	display: inline-block;
+	padding: 7px 10px;
+	margin: 10px 5px;
+	background: orangered;
+	color: yellow;
+	border: 2px solid yellow;
+	cursor: pointer;
+	text-decoration: none;
+	transition: color .3s ease-in-out, border .3s ease-in-out;
+}
+.btn-secondary:hover{
+	background: yellow;
+	color: orangered;
+	border: 2px dashed orangered;
+}
+input{
+	padding: 7px 10px;
+	border: 1px solid green;
+	width: 100%;
+	margin: 0;
+}
+.clear{
+	clear: both;
+}
+input[type="submit" i] {
+    margin: 10px 0;
+}
+table, tr, th, td{
+	border-collapse: collapse;
+}
+th{
+	background: orangered;
+	color: yellow;
+	padding: 5px;
+}
+tr:nth-child(even){
+	background: lightblue;
+}
+tr:nth-child(odd){
+	background: pink;
+}
+#success-msg{
+	display: none;
+	z-index: 2;
+	background: lightgreen;
+	border: 2px solid darkolivegreen;
+	color: darkgreen;
+	height: 100px;
+	min-width: 300px;
+	line-height: 3;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+    font-size: 26px;
+	padding: 10px;
+}
+#x {
+    background: red;
+    color: yellow;
+    border: 2px solid yellow;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    line-height: 0;
+    padding: 15px 4px;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+}
+
+#modal-box{
+	background: grey;
+	color: black;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#modal{
+		background: orangered;
+		border: 2px dotted yellow;
+		position: relative;
+		width: 20%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 10px;
+}
+#modal tr{
+	background: none;
+}
+#modal input{
+	margin-bottom: 8px;
+}
+#modal h3{
+	color: #fff;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 8px;
+}
+#modal #close{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: green;
+	color: white;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#pagination{
+	margin-top: 20px;
+}
+#pagination a{
+	padding: 5px;
+	background: lightgreen;
+	color: green;
+	border: 2px solid green;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 0 5px 0 0;
+}
+#pagination a.active{
+	background: orangered;
+	color: yellow;
+	border: 2px solid yellow;
+}
